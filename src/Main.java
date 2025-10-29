@@ -1,30 +1,13 @@
-//Es gibt ein Array mit n positiven Zahlen.
-//        1. Finden Sie die maximale Zahl.
-//2. Finden Sie die minimale Zahl.
-//3. Finden Sie die maximale Summe von n- 1 Zahlen.
-//        z.B. [4, 8, 3, 10, 17] => 4 + 8 + 10 + 17 = 39
-//        4. Finden Sie die minimale Summe von n -1 Zahlen.
-//        z.B. [4, 8, 3, 10, 17] => 4 + 8 + 3 + 10 = 25
-
-// maximul
-public static int max(int[] arr) {
-    int max = arr[0];
-    for (int num : arr) {
-        if (num > max)
-            max = num;
-    }
-    return max;
-}
-
-// Minimul
-public static int min(int[] arr) {
-    int min = arr[0];
-    for (int num : arr) {
-        if (num < min)
-            min = num;
-    }
-    return min;
-}
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
+    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+    // to see how IntelliJ IDEA suggests fixing it.
+    IO.println(String.format("Hello and welcome!"));
+
+    for (int i = 1; i <= 5; i++) {
+        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+        IO.println("i = " + i);
+    }
 }
