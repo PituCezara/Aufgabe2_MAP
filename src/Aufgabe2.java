@@ -25,3 +25,41 @@ public static int min(int[] arr) {
     }
     return min;
 }
+
+
+// suma maximă a n-1 elemente ( suma totală - minimul)
+public static int maxSum(int[] arr) {
+    int sum = 0;
+    int min = arr[0];
+    for (int num : arr) {
+        sum += num;
+        if (num < min)
+            min = num;
+    }
+    return sum - min;
+}
+
+//  Suma minimă a n-1 elemente (suma totală - maximul)
+public static int minSum(int[] arr) {
+    int sum = 0;
+    int max = arr[0];
+    for (int num : arr) {
+        sum += num;
+        if (num > max)
+            max = num;
+    }
+    return sum - max;
+}
+
+// Test
+public static void main(String[] args) {
+    int[] arr = {4, 8, 3, 10, 17};
+
+    System.out.println("Array: " + Arrays.toString(arr));
+    System.out.println(" Max: " + max(arr));
+    System.out.println(" Min: " + min(arr));
+    System.out.println(" Maximale Summe (n-1 Zahlen): " + maxSum(arr)); // 39
+    System.out.println(" Minimale Summe (n-1 Zahlen): " + minSum(arr)); // 25
+}
+
+
